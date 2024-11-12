@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Secret Code Decoder</title>
+  <script>
+    function decode() {
+      var secretCode = document.getElementById("secret-code").value.toLowerCase();
+      var decodedMessage = "";
+
+      var substitutionKey = {
+        "w": "q",
+        "e": "w",
+        "r": "e",
+        "t": "r",
+        "y": "t",
+        "u": "y",
+        "i": "u",
+        "o": "i",
+        "p": "o",
+        "a": "p",
+        "s": "a",
+        "d": "s",
+        "f": "d",
+        "g": "f",
+        "h": "g",
+        "j": "h",
+        "k": "j",
+        "l": "k",
+        "z": "l",
+        "x": "z",
+        "c": "x",
+        "v": "c",
+        "b": "v",
+        "n": "b",
+        "m": "n",
+        "q": "m"
+      };
+
+      for (var i = 0; i < secretCode.length; i++) {
+        var character = secretCode[i];
+        var decodedCharacter = substitutionKey[character];
+        decodedMessage += decodedCharacter || character;
+      }
+
+      document.getElementById("decoded-message").textContent = decodedMessage;
+    }
+  </script>
+</head>
+<body>
+  <h1>Secret Code Decoder</h1>
+  <label for="secret-code">Enter the secret code:</label>
+  <input type="text" id="secret-code">
+  <button onclick="decode()">Decode</button>
+  <br>
+  <p id="decoded-message"></p>
+</body>
+</html>
