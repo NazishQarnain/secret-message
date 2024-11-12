@@ -1,4 +1,4 @@
-// Function to shift each letter by a specified amount, wrapping Z to A or A to Z
+// Caesar cipher shift function
 function caesarShift(str, shift) {
   return str.replace(/[a-zA-Z]/g, char => {
     const start = char <= 'Z' ? 65 : 97;
@@ -9,13 +9,13 @@ function caesarShift(str, shift) {
 // Encode function with a shift of +1
 function encodeMessage() {
   const inputText = document.getElementById('inputText').value;
-  const output = caesarShift(inputText, 1); // Shift letters forward by 1
+  const output = caesarShift(inputText, 1);
   document.getElementById('output').innerText = output;
 }
 
 // Decode function with a shift of -1
 function decodeMessage() {
   const inputText = document.getElementById('inputText').value;
-  const output = caesarShift(inputText, -1); // Shift letters backward by 1
+  const output = caesarShift(inputText, -1);
   document.getElementById('output').innerText = output;
 }
