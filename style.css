@@ -1,33 +1,76 @@
-body { 
-  font-family: Arial, sans-serif; 
-  text-align: center; 
-  margin-top: 50px; 
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
 }
 
-.container { 
-  max-width: 600px; 
-  margin: 0 auto; 
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-select, textarea, button { 
-  width: 100%; 
-  padding: 10px; 
-  margin: 10px 0; 
+h1 {
+  color: #333;
 }
 
-button { 
-  background-color: #4CAF50; 
-  color: white; 
-  border: none; 
-  cursor: pointer; 
+button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
 }
 
-button:hover { 
-  background-color: #45a049; 
+button:hover {
+  background-color: #45a049;
 }
 
-#output { 
-  background-color: #f9f9f9; 
-  padding: 15px; 
-  border: 1px solid #ddd; 
+#output {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border: 1px solid #ddd;
+}
+
+.pyq-section h2 {
+  margin-top: 30px;
+  color: #333;
+}
+
+.subject-section {
+  margin-top: 30px;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+}
+
+.subject-section h3 {
+  color: #333;
+}
+
+.subject-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.subject-section li {
+  margin: 5px 0;
+}
+
+.subject-section a {
+  color: #4CAF50;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.subject-section a:hover {
+  text-decoration: underline;
+}
+
+.update-note {
+  margin-top: 30px;
+  font-style: italic;
+  color: #666;
 }
